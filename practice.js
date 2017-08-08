@@ -66,7 +66,9 @@ that is named color, with the value being the color of your backpack. */
 //After you do the above, alert your entire backPack object.
 
   //Code here
-alert(backPack);
+
+//alert(backPack);
+
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
@@ -113,7 +115,21 @@ for (property in alsoMe){
 
   //Code Here
 
+  var album = {
+    deadOrAlive: "3:12",
+    urDumb: "4:15",
+    iHateU: "2:34",
+    iLoveNobodyButU: "3:10",
+    alongTheseLines: "4:12"
+  };
 
+
+  //Now, loop through your album object alerting every song title individually.
+
+ //Code Here
+  for(property in album) {
+    alert(property);
+  }
 
 //NEXT PROBLEM
 
@@ -123,12 +139,22 @@ for (property in alsoMe){
 //Create an object called states that has 5 US states as properties with the values being their population (doesn't have to be accurate).
 
   //Code Here
+var states = {
+  Utah: 666,
+  Seattle: 10000,
+  Chigaco: 43000,
+  Virginia: 56000,
+  Oregon: 420
+};
 
 //Now, loop through your states object and if the states population is greater than 30K, alert that state.
 
   //Code Here
 
-
+for(property in states){
+  if(states[property] > 30000)
+    alert(property);
+}
 
 
 //NEXT PROBLEM
