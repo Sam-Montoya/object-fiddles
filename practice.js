@@ -160,8 +160,6 @@ for(property in states){
 //NEXT PROBLEM
 
 
-
-
 var user1 = {
     name: 'Tyler McGinnis',
     email: null,
@@ -175,6 +173,11 @@ that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
 
+  for(property in user1){
+    if(user1.hasOwnProperty(property) && !user1[property])
+      delete user1[property];
+  }
+  console.log(user1);
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Code Here
