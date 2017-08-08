@@ -206,12 +206,15 @@ var user2 = {
 
   //Code Here
 
+  user2.name = "Tyler S. McGinnis";
+  user2.email= "tyler.mcginnis@devmounta.in";
+
 //Now call the sayEmail method that's on the user object which will alert the users email
 
   //Code Here
 
 
-
+user2.sayEmail();
 
 //NEXT PROBLEM
 
@@ -222,16 +225,23 @@ var user2 = {
 
   //Code Here
 
+  var methodCollection = {
+ 
+  };
+
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
   //Code Here
+  methodCollection.alertHello = function(){   alert("hello");   };
+  methodCollection.logHello = function(){     console.log("hello");   };
 
 //Now call your alertHello and logHello methods.
 
   //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 //NEXT PROBLEM
@@ -243,7 +253,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
-
+function makePerson(name, birthday, ssn){
+  var newPerson = {
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+  return newPerson;
+};
 
 //NEXT PROBLEM
 
@@ -253,6 +270,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
   //Code Here
 
+
+function makeCard(cardNumber, expirationDate, securityCode) {
+  return {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  };
+};
 
 
 //NEXT PROBLEM
@@ -265,3 +290,7 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 */
 
   //Code Here
+function bindCard(person, creditcard){
+var finalPerson = Object.assign({}, person, creditcard);
+return finalPerson;
+};
