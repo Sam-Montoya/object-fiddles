@@ -27,7 +27,7 @@ var favoriteThings = {
   person  : "Brother",
   book  : "Of Mice And Men",
   movie : "War of the Worlds",
-  holidy  : "Halloween"
+  holiday  : "Halloween"
 };
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
@@ -57,18 +57,23 @@ Using dot notation, add another key (or property) to your backPack object
 that is named color, with the value being the color of your backpack. */
 
   //Code here
+  var backPack = {
+  };
+  var item = "firstPocket";
+  backPack["firstPocket"] = "chapstick";
+  backPack.color = "black and gray";
 
 //After you do the above, alert your entire backPack object.
 
   //Code here
-
+alert(backPack);
 /*You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. */
 
   //Code here
 
-
+console.log(backPack);
 
 
 //NEXT PROBLEM
@@ -80,11 +85,23 @@ Instead, console.log your whole backPack object and then check out the console. 
 
   //Code Here
 
+var alsoMe = {
+  name  : "Sam",
+  age : 18,
+  height  : 6,
+  gender  : "male",
+  married : false,
+  eyeColor : "brown",
+  hairColor : "brown"
+};
+
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
 
-
+for (property in alsoMe){
+  alert("Poperty: " + alsoMe[property]);
+}
 
 
 //NEXT PROBLEM
@@ -95,11 +112,6 @@ Instead, console.log your whole backPack object and then check out the console. 
 //Create an Object called 'album' with 5 keys named different song titles that you make up, with the values being the length of each song.
 
   //Code Here
-
-//Now, loop through your album object alerting every song title individually.
-
-  //Code Here
-
 
 
 
