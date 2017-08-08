@@ -5,7 +5,12 @@
 
   //Code here
 
+var me = {
+  name : "Sam",
+  age : 18
+};
 
+//alert(me.name);
 
 
 //NEXT PROBLEM
@@ -16,18 +21,27 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category.
 
   //Code here
-
+var favoriteThings = {
+  band  : "Our Last Night",
+  food  :  "Chickfala",
+  person  : "Brother",
+  book  : "Of Mice And Men",
+  movie : "War of the Worlds",
+  holidy  : "Halloween"
+};
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
+favoriteThings.car = "Subaru WRX STI Premium White";
+favoriteThings.brand = "H & M";
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
 
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 //NEXT PROBLEM
